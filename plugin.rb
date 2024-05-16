@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# name: discourse-plugin-name
-# about: TODO
+# name: socratic-bot
+# about: This socratic bot will allow you to debate
 # meta_topic_id: TODO
 # version: 0.0.1
 # authors: Discourse
@@ -13,7 +13,7 @@ enabled_site_setting :plugin_name_enabled
 register_svg_icon "socratic-icon" if respond_to?(:register_svg_icon)
 
 module ::MyPluginModule
-  PLUGIN_NAME = "discourse-plugin-name"
+  PLUGIN_NAME = "discourse-socratic-bot"
 end
 
 require_relative "lib/my_plugin_module/engine"

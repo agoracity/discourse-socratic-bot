@@ -1,9 +1,13 @@
 en:
+  composer:
+    think_critically_title: "Socratic bot"
   admin_js:
     admin:
       site_settings:
         categories:
-          TODO_plugin_name: "Plugin Name"
+          TODO_plugin_name: "Socratic bot"
   js:
     discourse_plugin_name:
       placeholder: placeholder
+    composer:
+      think_critically_title: "Socratic bot"
