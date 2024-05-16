@@ -16,9 +16,8 @@ function initializeWithApi(api) {
   api.modifySelectKit("select-kit").appendContent(() => {
     return [
       {
-        action: "drinkCoffee",
         name: "Launch Socratic Bot",
-        icon: "comments",
+        icon: "socratic-icon",
         id: { name: undefined, action: () => getTextAreaValue() }, // Using a function to get the text value
       },
     ];
