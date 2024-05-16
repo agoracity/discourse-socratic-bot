@@ -1,22 +1,49 @@
-
-import { withPluginApi } from 'discourse/lib/plugin-api';
+import { withPluginApi } from "discourse/lib/plugin-api";
 
 function initializeWithApi(api) {
-  api.onToolbarCreate(toolbar => {
+  api.onToolbarCreate((toolbar) => {
     toolbar.addButton({
       id: "think_critically",
       group: "extras",
-      icon: "comments",
+      icon: "socratic-icon",
       perform: (editor) => {
-        console.log(editor.getText())
-      }
+        console.log(editor.getText());
+        console.log(editor.selected.value);
+      },
     });
+  });
+
+  api.modifySelectKit("select-kit").appendContent(() => {
+    return [
+      {
+        action: "drinkCoffee",
+        name: "Launch Socratic Bot",
+        icon: "comments",
+        id: { name: undefined, action: () => getTextAreaValue() }, // Using a function to get the text value
+      },
+    ];
   });
 }
 
-export default {
-  name: 'socratic-button',
-  initialize(container) {
-    withPluginApi('0.12.0', api => initializeWithApi(api));
+function getTextAreaValue() {
+  // Select the textarea element with the specified classes
+  const textarea = document.querySelector(".ember-text-area.ember-view.d-editor-input");
+
+  // Check if textarea is found
+  if (textarea) {
+    // Retrieve the value of the textarea
+    const textValue = textarea.value;
+
+    // Do something with the retrieved text value
+    console.log("Textarea value:", textValue);
+  } else {
+    console.error("Textarea element not found.");
   }
+}
+
+export default {
+  name: "socratic-button",
+  initialize(container) {
+    withPluginApi("0.12.0", (api) => initializeWithApi(api));
+  },
 };

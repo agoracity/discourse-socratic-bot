@@ -10,6 +10,8 @@
 
 enabled_site_setting :plugin_name_enabled
 
+register_svg_icon "socratic-icon" if respond_to?(:register_svg_icon)
+
 module ::MyPluginModule
   PLUGIN_NAME = "discourse-plugin-name"
 end
