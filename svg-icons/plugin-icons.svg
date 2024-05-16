@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
- <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" id='socratic-icon'  viewBox="0 0 52 30">
-    <g transform="translate(0.000000,40.000000)  scale(0.0100000,-0.0100000)" stroke="none">
+ <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" id='socratic-icon'  viewBox="0 0 52 30"
+     stroke-width="150"
+    stroke="currentColor"
+    fill="currentColor"
+ >
+    <g transform="translate(0.000000,40.000000)  scale(0.0100000,-0.0100000)" >
       <path d="M2331 5109 c-123 -13 -272 -45 -389 -84 -163 -55 -357 -159 -382
 -205 -19 -35 -12 -85 16 -113 46 -47 75 -45 172 11 227 130 437 187 737 199
 484 19 878 -123 1144 -413 243 -265 379 -637 422 -1149 13 -153 7 -433 -11
