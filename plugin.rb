@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 # name: socratic-bot
-# about: This socratic bot will allow you to debate
+# about: This socratic bot will allow you to critically analyze your post to identify any fallacies or biases, ensuring your content is clear and impactful.
 # meta_topic_id: TODO
 # version: 0.0.1
-# authors: Discourse
+# authors: Agoracity
 # url: TODO
 # required_version: 2.7.0
 

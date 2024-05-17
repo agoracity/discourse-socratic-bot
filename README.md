@@ -1,5 +1,5 @@
-# **Plugin Name** Plugin
+# **Socratic Bot** Plugin
 
 **Plugin Summary**
 
-For more information, please see: **url to meta topic**
+For more information, please see: **[about page](https://socratic.bot/about)**
