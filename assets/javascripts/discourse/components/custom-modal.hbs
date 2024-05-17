@@ -4,7 +4,7 @@
     <p> <b>Your text:</b> {{@model.textValue}}</p>
   </:body>
   <:footer>
-    <a class="btn btn-icon-text btn-primary create" href={{@model.Url}} target="_blank">
+    <a class="btn btn-icon-text btn-primary create" href={{@model.Url}} target="_blank" rel="noopener noreferrer">
       Proceed
     </a>
     <DModalCancel @close={{@closeModal}} />

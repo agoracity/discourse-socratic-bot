@@ -61,7 +61,7 @@ function getTextAreaValue(api) {
     // Do something with the retrieved text value
     // console.log("Textarea value:", textValue);
   } else {
-    console.error("Textarea element not found.");
+    throw new Error("Textarea element not found.");
   }
 }
 
