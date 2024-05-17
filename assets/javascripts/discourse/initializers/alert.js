@@ -13,7 +13,7 @@ function initializeWithApi(api) {
     });
   });
 
-  api.modifySelectKit("select-kit").appendContent(() => {
+  api.modifySelectKit("toolbar-popup-menu-options").appendContent(() => {
     return [
       {
         name: "Launch Socratic Bot",
