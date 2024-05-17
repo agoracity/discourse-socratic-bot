@@ -1,0 +1,13 @@
+<DModal @title="Socratic Bot" @closeModal={{@closeModal}}>
+  <:body>
+    <p>About socratic</p>
+    <p>Text Value: {{@model.textValue}}</p>
+        <p>encodedTextValue Value: {{@model.Url}}</p>
+  </:body>
+  <:footer>
+    <a class="btn btn-icon-text btn-primary create" href={{@model.Url}} target="_blank">
+      Proceed
+    </a>
+    <DModalCancel @close={{@closeModal}} />
+  </:footer>
+</DModal>
