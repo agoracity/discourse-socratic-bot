@@ -1,8 +1,7 @@
-<DModal @title="Socratic Bot" @closeModal={{@closeModal}}>
+<DModal @title={{html-safe (concat "Socratic Bot " (d-icon "socratic-icon"))}} @closeModal={{@closeModal}}>
   <:body>
-    <p>About socratic</p>
-    <p>Text Value: {{@model.textValue}}</p>
-        <p>encodedTextValue Value: {{@model.Url}}</p>
+<p>By proceeding, you'll be redirected to a third-party application. Here, you can critically analyze your post to identify any fallacies or biases, ensuring your content is clear and impactful.</p>
+    <p> <b>Your text:</b> {{@model.textValue}}</p>
   </:body>
   <:footer>
     <a class="btn btn-icon-text btn-primary create" href={{@model.Url}} target="_blank">
