@@ -42,7 +42,7 @@ function initializeWithApi(api) {
 function getTextAreaValue(api) {
   // Select the textarea element with the specified classes
   const textarea = document.querySelector(
-    ".ember-text-area.ember-view.d-editor-input"
+    ".ember-text-area.ember-view.d-editor-input",
   );
 
   // Check if textarea is found
@@ -50,8 +50,8 @@ function getTextAreaValue(api) {
     // Retrieve the value of the textarea
     const textValue = textarea.value;
     const test = encodeURIComponent(textValue);
-        //Replace with actual URL
-          //TO DO: Considerar pass the base URL as param or with .env, could be fun !
+    //Replace with actual URL
+    //TO DO: Considerar pass the base URL as param or with .env, could be fun !
     const encodedTextValue = `https://www.google.com/search?q=${test}`;
 
     // Open the modal
