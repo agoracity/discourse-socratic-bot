@@ -22,7 +22,7 @@ function initializeWithApi(api) {
         const textValue = editor.getText();
         const test = encodeURIComponent(textValue);
         //Replace with actual URL
-        const encodedTextValue = `https://socraticbot.framer.ai/agora?q=${test}`;
+        const encodedTextValue = `https://socratic.bot/agora?q=${test}`;
         toolbar.context.send("openSocraticModal", textValue, encodedTextValue);
       },
     });
@@ -52,7 +52,7 @@ function getTextAreaValue(api) {
     const test = encodeURIComponent(textValue);
     //Replace with actual URL
     //TO DO: Considerar pass the base URL as param or with .env, could be fun !
-    const encodedTextValue = `https://socraticbot.framer.ai/agora?q=${test}`;
+    const encodedTextValue = `https://socratic.bot/agora?q=${test}`;
 
     // Open the modal
     const context = api.container.lookup("component:d-editor");
